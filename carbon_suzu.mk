@@ -23,12 +23,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGSMDevice=1
 
 # Override Product Name for OmniROM
-PRODUCT_NAME := omni_suzu
+PRODUCT_NAME := carbon_suzu
 PRODUCT_MODEL := Xperia X
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := F5121,suzu
 
-# Inherit OmniROM parts
-$(call inherit-product, device/sony/suzu/twrp.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit Carbon GSM telephony parts
+$(call inherit-product, vendor/carbon/config/gsm.mk)
+
+# Inherit Carbon product configuration
+$(call inherit-product, vendor/carbon/config/common.mk)

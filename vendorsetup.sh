@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_suzu-userdebug
+add_lunch_combo carbon_suzu-userdebug
